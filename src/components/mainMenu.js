@@ -19,8 +19,20 @@ const menuQuery = graphql`{
         }
       }
     }
+  },
+  site {
+    siteMetadata {
+      siteURL
+    }
   }
-
+  allWordpressWpMedia {
+    edges {
+      node {
+        slug
+        source_url
+      }
+    }
+  }
 }
 `;
 // const getMenu = (props) =>{
@@ -64,8 +76,10 @@ const mainmenu =  () => (
             <div className="menu-content">
                 <ul>
                     {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => (
-                    <li to={`/${item.object_slug}`} key={item.title}>
-                    {item.title}
+                      <li  key={item.title}>
+                        <Link className='menuLink' to={`/${item.object_slug}`} >
+                        {item.title}
+                        </Link>
                     </li>
                     ))}
                 </ul>
