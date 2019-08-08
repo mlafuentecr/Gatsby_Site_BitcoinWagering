@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+head{
+	overflow: hidden;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #040404;
+	display: flex!important;
+	min-height: 100vh!important;
+  flex-direction: column!important;
+  background-image: url('../images/bg.jpg');
+  background-repeat-y: no-repeat;
+}
+
+
+.row {
+  width: 100%;
+}
+
+
+nav, .header{
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  margin: 10px 0px!important;
+  padding: 0px;
+  color: white;
+ 
+  background: #2A2832;
+  background: -moz-linear-gradient(top, #2A2832 0%, #16151A 50%, #010004 100%);
+  background: -webkit-linear-gradient(top, #2A2832 0%, #16151A 50%, #010004 100%);
+  background: linear-gradient(to bottom, #2A2832 0%, #16151A 50%, #010004 100%);
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    list-style: none;
+    margin: 0; 
+
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li.nav-link{
+  list-style-type:none; 
+  display:flex;
+  align-items:center;
+  display: flex;
+  justify-content: center;
+}
+.nav-link >a{
+  color: white;
+  text-decoration: none;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+
+}
+.nav-link:hover {
+  color: black;
+  background-color: #ec971f;
+  text-decoration: none;
+}
+.logo, .banner {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  padding: 10px;
+}
+.banner img {
+  height: 80px;
+}
+
+
+.header .row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+
+
+.white {
+  background-color: #f7f7f9;
+  padding: 20px;
+}
+.leftCol {
+  width: 100%;
+}
+.sideBar {
+  background-color: #eceeef;
+  border: #ccc;
+  border-style: solid;
+  border-width: 1px;
+}
+.mainContent h1, .titleSidebar h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  line-height: 45px;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+  text-align: center!important;
+}
+.titleSidebar {
+  text-transform: uppercase;
+  line-height: 45px;
+  height: auto;
+  background-color: black;
+  color: white;
+  text-align: center!important;
+}
+.logoSidebar {
+
+     display: flex;
+     justify-content: center;
+     min-height: 65px;
+ 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.logoSidebar img {
+  height: fit-content;
+}
+.link {
+  height: 40px;
+}
+.features {
+  color: white;
+  min-height: 100px;
+}
+.circle {
+  line-height: 1.4;
+  font-weight: bold;
+  color: #131313;
+  position: absolute;
+  width: 40px;
+  font-size: 150%;
+  height: 40px;
+  background: #fdfdfd;
+  border-radius: 50px;
+  border: 3px solid rgb(97, 59, 59);
+  left: -25px;
+  top: -8px;
+  text-align: center;
+}
+.box {
+  background-position: top center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, rgba(0,0,0,1)), color-stop(45%, rgba(33,24,15,1)));
+  background: linear-gradient(180deg, rgba(0,0,0,1) 44%, rgba(33,24,15,1) 45%);
+  background-size: auto 170px;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 150px;
+  margin: 20px 0px;
+}
+.wagerNow {
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+    background: rgb(255,190,0);
+  background: linear-gradient(180deg, rgba(255,190,0,1) 34%, rgba(249,125,1,1) 100%);
+  }
+  a.wagerNow:hover {
+    background: rgb(255,190,0);
+  background: linear-gradient(180deg, rgba(255,190,0,1) 100%, rgba(249,125,1,1) 34%);
+}
+ .review {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.features ul {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+
+
+
+
+.footer {
+  padding: 20px 20px;
+  background-position: top center;
+  background: url('../images/bg_footer.jpg');
+  background-repeat: no-repeat;
+  background-color: #040404!important;
+  color: #bdb9b9;
+  margin-top: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+/* ///////////////////MENU //////*/
+.menu-content {
+  margin: 0px 20px;
+}
+.navbar label, .collapsible-menu label{
+  display: none;
+}
+.navbar{
+
+    background: #2A2832;
+    background: -moz-linear-gradient(top, #2A2832 0%, #16151A 50%, #010004 100%);
+    background: -webkit-linear-gradient(top, #2A2832 0%, #16151A 50%, #010004 100%);
+    background: linear-gradient(to bottom, #2A2832 0%, #16151A 50%, #010004 100%);
+ 
+}
+.collapse {
+  display: none;
+}
+.collapsible-menu {
+  background-color: black;
+  
+}
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0px;
+    margin: 10px 0px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible-menu a {
+  display:block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+input#menu {
+  display: none!important;
+}
+
+.leftCol img {
+  max-width: 100%;
+}
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+																											media Query begin
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 400px) {
+
+}
+/*// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap*/
+
+/* > Small devices (landscape phones, 576px and up) -------------------------------------------------------------------------------- >  */
+@media (max-width: 500px) {
+
+.hidden-sm-down {
+  display: none;
+}
+}
+@media (max-width: 648px) {
+  .logo img, .banner img{
+    width: 90%;
+    object-fit: contain;
+}
+
+}
+/* > Medium devices (tablets, 768px and up) ----------------------------------------------------------------------------------------- >  */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+  .sideBar{
+    display: none;
+  }
+
+
+  
+.navbar label {
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  margin: 10px 0px!important;
+  padding: 0px;
+  color: white;
+
+}
+.collapsible-menu label {
+  font-size: 1.5rem;
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-content {
+  padding: 0px;
+  max-height: 0;
+  overflow: hidden;
+ 
+}
+/* Toggle Effect */
+input:checked ~ label {
+  
+}
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+
+.menu-content ul{
+  font-size: 1.5rem;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-flex-flow: column;
+  -ms-flex-direction: column;
+  flex-flow: column;
+}
+.menu-content ul li{
+  font-size: 1.5rem;
+}
+
+}
+@media (min-width: 768px) {
+  .navbar-toggler{
+    display: none;
+  }
+}
+
+
+/* > Large devices (desktops, 992px and up) ------------------------------------------------------------------------------------------ >  */
+@media (max-width: 992px) {
+
+}
+
+/* > Extra large devices (large desktops, 1200px and up) ------------------------------------------------------------------------------ >  */
+@media (max-width: 1200px) {
+  .collapsible-menu ul {
+    font-size: 1rem;
+  }
+}
