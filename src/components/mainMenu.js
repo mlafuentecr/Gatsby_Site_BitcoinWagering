@@ -35,10 +35,10 @@ const menuQuery = graphql`{
   }
 }
 `;
-// const getMenu = (props) =>{
-//   //Tome el primer menu que aperesca en header ya que solo 1 deberia salir porque esta filtrado arriba
-//   return props.allWordpressWpApiMenusMenusItems.edges[0].node.items;
-// }
+const getMenu = (props) =>{
+  //Tome el primer menu que aperesca en header ya que solo 1 deberia salir porque esta filtrado arriba
+  return props.allWordpressWpApiMenusMenusItems.edges[0].node.items;
+}
 
   // let checkType = (props, item) =>{
 
@@ -75,7 +75,7 @@ const mainmenu =  () => (
             <label htmlFor="menu">Menu</label>
             <div className="menu-content">
                 <ul>
-                    {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => (
+                    { getMenu(props).map(item => (
                       <li  key={item.title}>
                         <Link className='menuLink' to={`/${item.object_slug}`} >
                         {item.title}
