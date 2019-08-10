@@ -28,7 +28,7 @@ class index extends React.Component {
     const pages = Object.keys(this.props.data.allWordpressPage.edges);
 
     return (
-      <div>
+      <div>xxx
       {pages.map(key =>(
         <div key={key} index={key} data={this.props.data.allWordpressPage.edges[key].node}>
           <h1>{this.currentPage(key).title}</h1>

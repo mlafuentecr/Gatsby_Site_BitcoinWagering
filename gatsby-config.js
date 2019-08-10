@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `BitcoinWagering`,
     description: `BitcoinWagering`,
-    siteURL: 'www.adminbw.sitecr.com',
+    siteURL: 'www.adminbw.sitecr.com', //http://localhost/BitcoinWagering www.adminbw.sitecr.com
     author: `mariolafuente`,
   },
   plugins: [
@@ -19,7 +19,7 @@ module.exports = {
          * The base URL of the Wordpress site without the trailingslash and the protocol. This is required.
          * Example : 'gatsbyjsexamplewordpress.wordpress.com' or 'www.example-site.com'
          */
-        baseUrl: "adminbw.sitecr.com/",
+        baseUrl: "adminbw.sitecr.com",
         // The protocol. This can be http or https.
         protocol: "https",
         // Indicates whether the site is hosted on wordpress.com.
@@ -125,7 +125,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `standalone`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `./src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

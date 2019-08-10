@@ -24,7 +24,8 @@ const porfolioQuery = graphql`{
 const porfolioItem = () => {
 
 return(
-  <StaticQuery
+
+    <StaticQuery
   query={porfolioQuery}
   render={props => props.allWordpressWpPorfolio.edges.map(key =>
       <div className='item' props={props} key={key.node.id}>
@@ -34,6 +35,8 @@ return(
         <Link to={`/porfolio/${key.node.slug}`}> Read More </Link>
       </div>
   )}/>
+
+
   )
 
 }

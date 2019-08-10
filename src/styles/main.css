@@ -12,8 +12,17 @@ body {
   background-image: url('../images/bg.jpg');
   background-repeat-y: no-repeat;
 }
-
-
+.featureTitle {
+  padding-left: 20px!important;
+  height: 40px;
+  background-color: black;
+  line-height: 40px;
+  color: white;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 .row {
   width: 100%;
 }
@@ -122,14 +131,18 @@ li.nav-link{
   text-align: center!important;
 }
 .logoSidebar {
-
+      background-color: black;
      display: flex;
      justify-content: center;
      min-height: 65px;
- 
+     flex-grow: 2;
      display: flex;
      justify-content: center;
      align-items: center;
+}
+.descrip {
+  display: flex;
+  flex-grow: 1;
 }
 .logoSidebar img {
   height: fit-content;
@@ -155,6 +168,11 @@ li.nav-link{
   left: -25px;
   top: -8px;
   text-align: center;
+}.pros ul {
+  list-style-image: url('../images/plus.jpg');
+}
+.cons ul {
+  list-style-image: url('../images/less.jpg');
 }
 .box {
   background-position: top center;
@@ -203,7 +221,7 @@ li.nav-link{
   padding: 20px 20px;
   background-position: top center;
   background: url('../images/bg_footer.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-color: #040404!important;
   color: #bdb9b9;
   margin-top: 10px;
@@ -259,35 +277,166 @@ input#menu {
   max-width: 100%;
 }
 
+.f_Article {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.f_Article a {
+  text-transform: uppercase;
+  font-size: 14px;
+  max-width: 75%;
+  
+}span.date {
+  text-transform: uppercase;
+  color: red;
+  width: 20%;
+  font-size: 0.8em;
+}.copy {
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 11px;
+  border-top: 1px solid #cccccc;
+  width: 100%;
+}.btn-danger {
+  margin: 10px 0px;
+  height: 25px;
+  line-height: 5px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}a.btn.btn-danger {
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  max-width: 20%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.featurePost {
+  display: flex;
+}
+.item {
+
+  border: 1px white solid;
+  display: flex;
+  align-items: center;
+  min-height: 180px;
+}
+
+.thumbnailArticle {
+  overflow: hidden;
+  width: 133px;
+  height: 80px;
+}.f_Article.float-right a {
+  text-decoration: none;
+}
+span.title {
+  max-width: 75%;
+  font-size: 0.8em;
+}
 
 
 
 
+
+/**REviews*/
+.pgReview .box {
+    position: relative;
+    background: #f5f5f5!important;
+    border: solid 1px gray;
+}
+
+.box {
+  background-position: top center;
+
+  min-height: 150px;
+}
+a.wagerNow:hover {
+    color: yellow!important;
+}
+
+.pros h2{
+       font-weight: 900;
+       font-size: 200%;
+    color: green;
+}
+.cons h2{
+       font-weight: 900;
+       font-size: 200%;
+    color: red;
+}
+.col-12.featurePosts h2, .col-12.Summary h2{
+  font-weight: 900;
+  font-size: 150%;
+color: black;
+}
+
+.container-review {
+  display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}.featurePosts, .Summary {
+  width: 50%;
+}
+.prosCons {
+  border: solid 4px #f5f5f5;
+  min-height: 225px;
+  background-color: white;
+  flex-grow: 3;
+  display: flex;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.item h2 {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 																											media Query begin
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media (max-width: 400px) {
 
-}
-/*// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap*/
 
-/* > Small devices (landscape phones, 576px and up) -------------------------------------------------------------------------------- >  */
-@media (max-width: 500px) {
 
-.hidden-sm-down {
-  display: none;
-}
-}
-@media (max-width: 648px) {
-  .logo img, .banner img{
-    width: 90%;
-    object-fit: contain;
+/* > Extra large devices (large desktops, 1200px and up) ------------------------------------------------------------------------------ >  */
+@media (max-width: 1200px) {
+  .collapsible-menu ul {
+    font-size: 1rem;
+  }
 }
 
+
+/* > Large devices (desktops, 992px and up) ------------------------------------------------------------------------------------------ >  */
+@media (max-width: 992px) {
+
 }
+
 /* > Medium devices (tablets, 768px and up) ----------------------------------------------------------------------------------------- >  */
 @media (max-width: 768px) {
   .navbar-nav {
@@ -308,8 +457,31 @@ input#menu {
     display: none;
   }
 
+  .footer > div {
+    width: 33%;
+}
+.item {
+  height: initial;
+}
 
-  
+.featurePost {
+  display: flex;
+  justify-content: space-evenly;
+}
+.thumbnailArticle {
+  width: initial;}
+  .f_Article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+.f_Article.float-right a {
+  text-decoration: none;
+  padding: 10px;
+}
 .navbar label {
   color: white;
   border-style: solid;
@@ -358,23 +530,45 @@ input:checked ~ .menu-content {
 .menu-content ul li{
   font-size: 1.5rem;
 }
-
+.item {
+  flex-wrap: wrap;
 }
-@media (min-width: 768px) {
-  .navbar-toggler{
-    display: none;
-  }
 }
 
+/* > Small devices (landscape phones, 576px and up) -------------------------------------------------------------------------------- >  */
 
-/* > Large devices (desktops, 992px and up) ------------------------------------------------------------------------------------------ >  */
-@media (max-width: 992px) {
+@media (max-width: 648px) {
+  .logo img, .banner img{
+    width: 90%;
+    object-fit: contain;
+}
 
 }
 
-/* > Extra large devices (large desktops, 1200px and up) ------------------------------------------------------------------------------ >  */
-@media (max-width: 1200px) {
-  .collapsible-menu ul {
-    font-size: 1rem;
-  }
+
+@media (max-width: 400px) {
+  .footer > div {
+    width: 50%;
+}
+.hidden-sm-down {
+  display: none;
+}
+
+
+
+.featurePost {
+  flex-wrap: wrap;
+}
+span.title {
+  max-width: 100%;
+  margin: 10px;
+}
+span.date {
+
+  width: 100%;
+}
+a.btn.btn-danger {
+  max-width: 100%;
+}
+
 }

@@ -40,25 +40,25 @@ const getMenu = (props) =>{
   return props.allWordpressWpApiMenusMenusItems.edges[0].node.items;
 }
 
-  // let checkType = (props, item) =>{
+  let checkType = (props, item) =>{
 
-  //   //Si entro a categoria le quito
-  //   const propsVar = props.site.siteMetadata.siteURL;
-  //   let link ='';
-  //   const urlString = item.url;
-  //   console.log('1'+urlString);
+    //Si entro a categoria le quito
+    const propsVar = props.site.siteMetadata.siteURL;
+    let link ='';
+    const urlString = item.url;
+    console.log('1'+urlString);
 
-  //   if(item.object === 'category'){
-  //     link = urlString.replace('https://', "");
-  //     console.log('2'+link);
-  //     link = link.replace(propsVar, "/");
-  //     console.log('3'+link);
-  //   }else{
-  //     link = item.object_slug;
-  //     console.log('4'+link);
-  //   }
-  //   return link
-  // }
+    if(item.object === 'category'){
+      link = urlString.replace('https://', "");
+      console.log('2'+link);
+      link = link.replace(propsVar, "/");
+      console.log('3'+link);
+    }else{
+      link = item.object_slug;
+      console.log('4'+link);
+    }
+    return link
+  }
 
  
 
@@ -77,7 +77,7 @@ const mainmenu =  () => (
                 <ul>
                     { getMenu(props).map(item => (
                       <li  key={item.title}>
-                        <Link className='menuLink' to={`/${item.object_slug}`} >
+                        <Link className='menuLink' to={checkType(props, item)} >
                         {item.title}
                         </Link>
                     </li>
@@ -85,8 +85,7 @@ const mainmenu =  () => (
                 </ul>
             </div>
       </div>
-
-      // </header>
+ </header>
     )}
   />
 )

@@ -34,7 +34,7 @@ const sidebar =  () => (
      query={sidebarQuery}
      render={props => (
  
-<div datatest={props} className="col-lg-4 hidden-sm-down hidden-md-down sideBar no-gutters">
+<div datatest={props} className="col-lg-4 col-md-4 col-sm-12 hidden-sm-down hidden-md-down sideBar no-gutters">
 
 <div className="titleSidebar">
 <h2>top bitcoin sportsbooks</h2>

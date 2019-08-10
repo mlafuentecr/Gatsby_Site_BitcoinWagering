@@ -2,7 +2,9 @@ import React from "react";
 import Layout from "../components/layout";
 import PorfolioItem from "../components/porfolioItems";
  
-export default class CategoryTemplate extends React.Component {
+
+  class category extends React.Component {
+
   render() {
  
     const pageContext = this.props.pageContext;
@@ -18,4 +20,4 @@ export default class CategoryTemplate extends React.Component {
     );
   }
 }
- 
+export default category;
