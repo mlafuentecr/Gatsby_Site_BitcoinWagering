@@ -10,11 +10,11 @@ const slash   = require(`slash`)
 // Will create pages for WordPress pages (route : /{slug})
 // Will create pages for WordPress posts (route : /post/{slug})
 exports.createPages = ({ graphql, actions }) => {
-  
+
   const { createPage, createRedirect } = actions
-  createRedirect({ 
-    fromPath: '/', 
-    toPath: '/index', 
+  createRedirect({
+    fromPath: '/',
+    toPath: '/index',
     isPermanent: true,
     redirectInBrowser : true
   })
@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
     // queries against the local WordPress graphql schema. Think of
     // it like the site has a built-in database constructed
     // from the fetched data that you can run queries against.
- 
+
 
   // ==== POSTS (WORDPRESS NATIVE AND ACF) ====
 
@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
               slug
               excerpt
               content
-              path 
+              path
             }
           }
         }
@@ -63,7 +63,7 @@ exports.createPages = ({ graphql, actions }) => {
           })
           resolve()
         })
-     
+
     // ==== END POSTS ====
      // ==== category (WORDPRESS NATIVE) ====
      graphql(`{
@@ -73,6 +73,7 @@ exports.createPages = ({ graphql, actions }) => {
             wordpress_id
             name
             slug
+            description
           }
         }
       }

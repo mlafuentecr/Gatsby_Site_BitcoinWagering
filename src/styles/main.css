@@ -35,7 +35,7 @@ nav, .header{
   margin: 10px 0px!important;
   padding: 0px;
   color: white;
- 
+
   background: #2A2832;
   background: -moz-linear-gradient(top, #2A2832 0%, #16151A 50%, #010004 100%);
   background: -webkit-linear-gradient(top, #2A2832 0%, #16151A 50%, #010004 100%);
@@ -45,9 +45,9 @@ nav, .header{
     list-style: none;
 
     list-style: none;
-    margin: 0; 
+    margin: 0;
 
-    
+
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -58,7 +58,7 @@ nav, .header{
 }
 
 li.nav-link{
-  list-style-type:none; 
+  list-style-type:none;
   display:flex;
   align-items:center;
   display: flex;
@@ -92,16 +92,14 @@ li.nav-link{
   text-align: center;
   display: flex;
   justify-content: center;
-  
+
 }
-
-
-
 
 
 .white {
   background-color: #f7f7f9;
   padding: 20px;
+  box-sizing: border-box;
 }
 .leftCol {
   width: 100%;
@@ -225,6 +223,8 @@ li.nav-link{
   background-color: #040404!important;
   color: #bdb9b9;
   margin-top: 10px;
+      display: flex;
+    justify-content: space-around;
 }
 
 .d-flex {
@@ -245,14 +245,14 @@ li.nav-link{
     background: -moz-linear-gradient(top, #2A2832 0%, #16151A 50%, #010004 100%);
     background: -webkit-linear-gradient(top, #2A2832 0%, #16151A 50%, #010004 100%);
     background: linear-gradient(to bottom, #2A2832 0%, #16151A 50%, #010004 100%);
- 
+
 }
 .collapse {
   display: none;
 }
 .collapsible-menu {
   background-color: black;
-  
+
 }
 .collapsible-menu ul {
   list-style-type: none;
@@ -267,6 +267,7 @@ li.nav-link{
   padding: 10px;
   text-decoration: none;
   color:white;
+      text-transform: uppercase;
 }
 
 input#menu {
@@ -286,7 +287,7 @@ input#menu {
   text-transform: uppercase;
   font-size: 14px;
   max-width: 75%;
-  
+
 }span.date {
   text-transform: uppercase;
   color: red;
@@ -417,6 +418,12 @@ color: black;
   margin-bottom: 10px;
 }
 
+.cat {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 																											media Query begin
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -433,12 +440,24 @@ color: black;
 
 
 /* > Large devices (desktops, 992px and up) ------------------------------------------------------------------------------------------ >  */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
 
+.catItems {
+    width: 25%;
+}
+
+}
+
+@media (max-width: 990px) {
+
+    .catItems {
+      width: 100%;
+  }
 }
 
 /* > Medium devices (tablets, 768px and up) ----------------------------------------------------------------------------------------- >  */
 @media (max-width: 768px) {
+
   .navbar-nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -504,11 +523,11 @@ color: black;
   padding: 0px;
   max-height: 0;
   overflow: hidden;
- 
+
 }
 /* Toggle Effect */
 input:checked ~ label {
-  
+
 }
 input:checked ~ .menu-content {
   max-height: 100%;

@@ -6,7 +6,7 @@ class post extends React.Component {
 
 
    render() {
- 
+
     const postContext = this.props.pageContext;
 
     return (

@@ -46,21 +46,20 @@ const getMenu = (props) =>{
     const propsVar = props.site.siteMetadata.siteURL;
     let link ='';
     const urlString = item.url;
-    console.log('1'+urlString);
 
     if(item.object === 'category'){
       link = urlString.replace('https://', "");
-      console.log('2'+link);
+
       link = link.replace(propsVar, "/");
-      console.log('3'+link);
+
     }else{
       link = item.object_slug;
-      console.log('4'+link);
+
     }
     return link
   }
 
- 
+
 
 
 

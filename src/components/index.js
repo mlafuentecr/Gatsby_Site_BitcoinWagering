@@ -44,7 +44,7 @@ const index = () => {
     - <span className="date"> Nov 30, 2017</span>
   <div className="copy">
   <div className='excerpt' dangerouslySetInnerHTML={{__html: item.node.excerpt}} />
-  <Link to={`post/${item.node.path}`}  className="btn btn-danger">Read More...</Link>
+  <Link to={`${item.node.path}`}  className="btn btn-danger">Read More...</Link>
   </div>
   </div>
 </div>
@@ -54,7 +54,7 @@ const index = () => {
 
     </div>
     )
-  
+
   }
 
 export default index;
