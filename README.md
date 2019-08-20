@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://bitcoinwagering.netlify.com/index/">
-    <img alt="Bitcoinwagering" src="https://drive.google.com/open?id=1G36gtv8X9RP7beJIMb5UOKtql3XUiJkG" width="60" />
+    <img alt="Bitcoinwagering" src="https://drive.google.com/file/d/1G36gtv8X9RP7beJIMb5UOKtql3XUiJkG/view" width="60" />
   </a>
 </p>
 <h1 align="center">
