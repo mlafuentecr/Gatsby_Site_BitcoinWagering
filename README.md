@@ -11,18 +11,19 @@
 
 ## 🚀  Bitcoinwagering
 
-1.  **Create a Gatsby  Bitcoinwagering**
+1.  **A Gatsby Site for Bitcoinwagering**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
+    Plus using ACF in WP and ofcourse Wp has backend
+    also using graphiql
 
     ```sh
     # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
     ```
 
     ```
 
-1.  **Open the source code and start editing!**
+1.  ** **
 
     Your site is now running at `http://localhost:8000`!
 
