@@ -18,7 +18,7 @@
     also using graphiql
 
     ```sh
-    # create a new Gatsby site using the default starter
+    # https://bitcoinwagering.netlify.com/index/
     ```
 
     ```
